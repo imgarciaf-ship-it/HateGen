@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>𐔌՞. .՞𐦯</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" style="image/jpg" href="hategen.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div id="home-screen" class="screen active">
+        <div class="content-area">
+            <div class="top-banner">
+                <span class="comms-status">REGISTRO ESCOLAR</span>
+                <span class="title-here">Mis Compañeros</span>
+                <div class="icon-group">
+                    <button id="reset-all-btn" class="icon-btn" title="Borrar todo">
+                        <span class="fas fa-trash-alt"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="welcome-banner">
+                <p>¡Hola, Isabella!</p>
+                <div class="sub-text">Selecciona a alguien para escribir en su diario.</div>
+            </div>
+
+            <div id="student-list" class="mobile-grid">
+                </div>
+        </div>
+    </div>
+
+    <div id="profile-screen" class="screen">
+        <div class="content-area">
+            <div class="profile-header">
+                <button id="back-button" class="back-btn"><i class="fas fa-chevron-left"></i></button>
+                <span id="profile-title" class="title-here">Libros</span>
+                <button id="add-book-btn" class="add-circle-btn"><i class="fas fa-plus"></i></button>
+            </div>
+
+            <div class="diary-library" id="diary-library">
+                </div>
+        </div>
+    </div>
+
+    <div id="writing-screen" class="screen">
+        <div class="content-area">
+            <div class="profile-header">
+                <button id="close-book-btn" class="back-btn"><i class="fas fa-times"></i></button>
+                <span id="book-title-display" class="title-here">Título</span>
+                <span id="save-indicator" class="save-status">✓</span>
+            </div>
+            <textarea id="book-content" class="book-textarea" placeholder="Escribe aquí las anécdotas del día..."></textarea>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
